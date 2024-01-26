@@ -82,7 +82,7 @@ th:last-child {
 }
 .tag-container {
   display: flex;
-  gap: 8px; /* Adjust the gap between tags */
+  gap: 8px; 
 }
 
 .tag {
@@ -106,4 +106,10 @@ th:last-child {
 
 .tag img {
   margin-left: 8px;
+}
+@media screen and (max-width: 1050px) {
+  .table-container {
+    overflow-x: auto;
+    width: 100%;
+  }
 }
