@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./SignInCard.css"
 export const SignInCard = () =>{
     return(
         <form className="form-container">
@@ -11,20 +12,16 @@ export const SignInCard = () =>{
             <div className="white">
               <div className="button" />
             </div>
-            <img className="google-icon-1" alt="" src="/googleicon-1@2x.png" />
+            <img className="google-icon-1" alt="logo" src="/googleicon-1@2x.png" />
             <div className="main-container-with">Sign in with Google</div>
           </button>
-          <div className="white-group">
-            <div className="white1">
-              <div className="button1" />
+          <button className="white-parent">
+            <div className="white">
+              <div className="button" />
             </div>
-            <img className="apple-1-icon" alt="" src="/apple-1@2x.png" />
-            <input
-              className="main-container-with1"
-              placeholder="Sign in with Apple"
-              type="text"
-            />
-          </div>
+            <img className="google-icon-1" alt="logo" src="/apple-1@2x.png" />
+            <div className="main-container-with">Sign in with Apple</div>
+          </button>
         </div>
         <div className="card-parent">
           <div className="card">
