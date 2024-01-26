@@ -1,5 +1,5 @@
 import "./Navbar.css";
-
+import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <nav className="navbar-container">
@@ -13,7 +13,7 @@ export const Navbar = () => {
             src="/subtract.svg"
           />
         </div>
-        <h3 className="navbar-heading">Base</h3>
+        <Link to="/" className="logo-link"><h3 className="navbar-heading">Base</h3></Link>
       </div>
 
       <ul className="navbar-items-list">

@@ -1,13 +1,14 @@
-import { useCallback } from "react";
+import { useState } from "react";
 import "./Upload.css";
 import { Navbar } from "../../components/navbar/Navbar";
 import { AppBar } from "../../components/app-bar/AppBar";
 import TableRowsContainer from "../../components/table-row/TableRowsContainer";
 
 const Upload = () => {
-  const onSizemdIconLeftTypePrimaClick = useCallback(() => {
-    // Please sync "Uploading" to the project
-  }, []);
+  const [showTable, setShowTable] = useState(false);
+  const showEvaluatedTable = () => {
+    setShowTable(true);
+  }
 
   return (
     <div className="upload">
@@ -34,13 +35,13 @@ const Upload = () => {
               </div>
               <button
                 className="upload-button"
-                onClick={onSizemdIconLeftTypePrimaClick}
+                onClick={showEvaluatedTable}
               >
                 <img className="icon" alt="" src="/icon.svg" />
                 <div className="value">Upload</div>
               </button>
             </div>
-            <TableRowsContainer/>
+            {showTable && <TableRowsContainer/>}
 
         </div>
       </section>

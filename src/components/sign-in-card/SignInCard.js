@@ -1,10 +1,5 @@
-import { useCallback } from "react";
 import { Link } from "react-router-dom";
 export const SignInCard = () =>{
-    const onButtonPrimaryClick = useCallback(() => {
-
-    }, []);
-  
     return(
         <form className="form-container">
         <div className="main-container-parent">
@@ -61,7 +56,7 @@ export const SignInCard = () =>{
           </div>
           <button className="button-primary-parent">
             <div className="button-primary">
-              <Link to="/upload"><div className="button-primary1" onClick={onButtonPrimaryClick} /></Link>
+              <Link to="/upload"><div className="button-primary1"/></Link>
             </div>
             <b className="main-container2">Sign In</b>
           </button>

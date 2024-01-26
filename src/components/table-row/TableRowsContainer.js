@@ -52,14 +52,14 @@ const TableRowsContainer = () => {
         <tr key={row.slNo} className="table-row">
           <td className="table-column col-no">{row.slNo}</td>
           <td className="table-column">
-            <Link to={row.link} className="col-link">
+            <Link to={row.link} className="col-link" style={{textDecoration: "underline"}}>
               {row.link}
             </Link>
           </td>
           <td className="table-column">{row.prefix}</td>
           <td className="table-column dropdown-tag">
             {row.addtag}
-            <img src="./controls.png" className="dropdown-icon"/>
+            <img src="./controls.png" className="dropdown-icon" alt="dropdown"/>
           </td>
           <td className="table-column tags selected-tags">
             <div className="tag-container">

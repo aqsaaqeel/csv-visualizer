@@ -1,6 +1,6 @@
 import "./SignIn.css";
 import { SignInCard } from "../../components/sign-in-card/SignInCard";
-
+import { Link } from "react-router-dom";
 const SignIn = () => {
 
   return (
@@ -52,7 +52,7 @@ const SignIn = () => {
         </div>
       </div>
       <img className="subtract-icon" alt="" />
-      <SignInCard />
+      <Link to="/upload"><SignInCard /></Link>
     </div>
   );
 };
