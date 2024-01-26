@@ -1,0 +1,86 @@
+.masked-vector-node,
+.minus-sign-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.minus-sign-component {
+  align-self: stretch;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--gap-15xl);
+  max-width: 100%;
+}
+.minus-sign-component-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 137px;
+  max-width: 100%;
+}
+.c-s-v-input-node-inner,
+.upload-csv-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.c-s-v-input-node-inner {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+}
+.c-s-v-input-node {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 684px;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.mask-group-icon,
+.vector-icon {
+  height: 23px;
+  width: 18px;
+  position: relative;
+}
+.mask-group-icon {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+.masked-vector-node {
+    align-items: center;
+    gap: 28px;
+  }
+@media screen and (max-width: 1125px) {
+  .minus-sign-component-parent {
+    gap: 68px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .minus-sign-component {
+    gap: var(--gap-mid);
+  }
+  .minus-sign-component-parent {
+    gap: var(--gap-15xl);
+  }
+
+  .c-s-v-input-node {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .minus-sign-component-parent {
+    gap: var(--gap-mid);
+  }
+  .upload-csv {
+    font-size: var(--font-size-lgi);
+    line-height: 26px;
+  }
+}
