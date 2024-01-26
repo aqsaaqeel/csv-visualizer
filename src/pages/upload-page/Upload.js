@@ -20,7 +20,9 @@ const Upload = () => {
       <section className="upload-inner">
         <div className="minus-sign-component-parent">
           <AppBar />
+          <p className="mobile-heading-csv">Upload CSV</p>
             <div className="input-container">
+             
               <div className="upload-container">
                 <img
                   className="label-placeholder-node"

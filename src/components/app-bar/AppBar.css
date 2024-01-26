@@ -1,3 +1,20 @@
+.appbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 2rem;
+}
+.appbar-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  height: 24px;
+}
+.mobile-appbar-container {
+  display: none;
+}
 .masked-vector-node,
 .minus-sign-component {
   display: flex;
@@ -11,14 +28,9 @@
   gap: var(--gap-15xl);
   max-width: 100%;
 }
-.minus-sign-component-parent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 137px;
-  max-width: 100%;
+
+.upload-csv {
+  font-size: 24px;
 }
 .c-s-v-input-node-inner,
 .upload-csv-wrapper {
@@ -55,9 +67,60 @@
   object-fit: cover;
 }
 .masked-vector-node {
-    align-items: center;
-    gap: 28px;
+  align-items: center;
+  gap: 28px;
+}
+
+@media screen and (max-width: 1050px) {
+  .appbar-container {
+    width: 100%;
   }
+  .minus-sign-component {
+    display: flex;
+  }
+  .mobile-appbar-container {
+    display: block;
+    margin-left: 1rem;
+  }
+  .appbar-heading-container {
+    display: flex;
+    align-items: center;
+    height: 12px;
+    gap:1rem;
+  }
+  .mobile-hamburger {
+    display: flex;
+    height: 12px;
+    gap: 1rem;
+  }
+  .appbar-heading {
+    display: none;
+  }
+  .appbar-icons {
+    gap: 0.5rem;
+    height: 12px;
+    margin-right:1rem;
+  }
+  .c-s-v-input-node-inner {
+    display: none;
+  }
+  .logo-wrapper {
+    margin-right: auto; 
+  }
+
+  .c-s-v-input-node {
+    min-width: 0;
+    flex: 1;
+  }
+  .navbar-on-mobile{
+    position: absolute;
+    top:0;
+    background-color: white;
+    z-index: 3;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1125px) {
   .minus-sign-component-parent {
     gap: 68px;
@@ -67,18 +130,12 @@
   .minus-sign-component {
     gap: var(--gap-mid);
   }
-  .minus-sign-component-parent {
-    gap: var(--gap-15xl);
-  }
 
   .c-s-v-input-node {
     min-width: 100%;
   }
 }
 @media screen and (max-width: 450px) {
-  .minus-sign-component-parent {
-    gap: var(--gap-mid);
-  }
   .upload-csv {
     font-size: var(--font-size-lgi);
     line-height: 26px;

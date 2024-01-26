@@ -6,12 +6,6 @@ export const Navbar = () => {
       <div className="navbar-heading-container">
         <div className="subtract-frame">
           <img className="subtract-icon" alt="" src="/subtract.svg" />
-          <img
-            className="subtract-icon1"
-            loading="eager"
-            alt=""
-            src="/subtract.svg"
-          />
         </div>
         <Link to="/" className="logo-link"><h3 className="navbar-heading">Base</h3></Link>
       </div>

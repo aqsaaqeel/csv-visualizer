@@ -12,6 +12,15 @@
   align-items: flex-start;
   padding: 0 var(--padding-12xl);
 }
+.minus-sign-component-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 137px;
+  max-width: 100%;
+}
 
 .label-placeholder-node {
   width: 36px;
@@ -19,7 +28,7 @@
   position: relative;
 }
 .browse {
-   color: #605BFF;
+  color: #605bff;
 }
 .placeholder-text {
   position: relative;
@@ -29,7 +38,7 @@
 .upload-container {
   align-self: stretch;
   border-radius: var(--br-5xs);
-  border: 1px dashed #EBEBEB;
+  border: 1px dashed #ebebeb;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -56,6 +65,9 @@
   font-family: var(--paragraph-ui-type-text-2xl-s);
   color: var(--light-gohan);
   text-align: left;
+}
+.mobile-heading-csv {
+  display: none;
 }
 .upload-button {
   display: flex;
@@ -88,7 +100,6 @@
   padding: 1rem;
   gap: 21px;
 }
-
 
 .upload,
 .upload-inner {
@@ -133,6 +144,31 @@
   .upload {
     padding-left: var(--padding-11xl);
     box-sizing: border-box;
+  }
+  .mobile-heading-csv {
+    display: block;
+    color: #030229;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: self-start;
+    margin-left: 2rem;
+  }
+  .upload-button {
+    display: flex;
+    width: 14rem;
+    height: 56px;
+    padding: 8px 16px 8px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #605bff;
+    color: white;
+    border: none;
   }
 }
 @media screen and (max-width: 750px) {
